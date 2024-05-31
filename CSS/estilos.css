@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Reset de estilos para el body y el ul */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Color de fondo de la barra */
+    display: flex; /* Mostramos el logo y los enlaces en línea */
+    justify-content: space-between; /* Colocamos el logo a la izquierda y los enlaces a la derecha */
+    align-items: center; /* Centramos verticalmente los elementos */
+    height: 70px; /* Altura de la barra */
+}
+
+.logo img {
+    height: 50px; /* Ajusta la altura del logo según lo necesites */
+    margin-left: 20px; /* Espacio entre el logo y los enlaces */
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none; /* Quitamos los estilos de viñeta de la lista */
+}
+
+.menu li {
+    display: inline-block; /* Mostramos los elementos de la lista en línea */
+}
+
+.menu li a {
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    padding: 15px 20px; /* Espacio interno de los enlaces */
+}
+
+/* Cambio de color de los enlaces al pasar el ratón por encima */
+.menu li a:hover {
+    background-color: #555; /* Color de fondo del enlace al pasar el ratón por encima */
+}
+
+/* Estilos para la tabla en general */
+table {
+    width: 80%; /* Ancho de la tabla al 80% del contenedor */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+    border-collapse: collapse; /* Colapso de bordes de celdas para un diseño más limpio */
+}
+
+/* Estilos para el encabezado de la tabla (thead) */
+thead {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+}
+
+/* Estilos para el encabezado de la tabla (thead) */
+thead th {
+    padding: 15px; /* Aumentar el espaciado interno de las celdas del encabezado */
+}
+
+
+/* Estilos para las filas impares (tr) */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo para filas impares */
+}
+
+/* Estilos para las filas pares (tr) */
+tbody tr:nth-child(even) {
+    background-color: #e0e0e0; /* Color de fondo para filas pares */
+}
+
+/* Estilos para las celdas (td) de la tabla */
+td {
+    padding: 10px; /* Espaciado interno de las celdas */
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para las imágenes en las celdas */
+td img {
+    display: block; /* Hacer que las imágenes sean elementos de bloque */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Ajustar el tamaño máximo de las imágenes al ancho de la celda */
+}
+
+/* Resto de estilos existentes */
+
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #f2f2f2; /* Color de fondo del contenedor */
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para las etiquetas del formulario */
+.login-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.login-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-container form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos para el enlace de "Regresar" */
+.login-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para los asientos */
+.bus-seats {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 5px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.seat.disponible {
+    background-color: #5cb85c;
+}
+
+.seat.ocupado {
+    background-color: #d9534f;
+    cursor: default;
+}
+
+.seat.selected {
+    background-color: #2e6da4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 8px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.btn-amarillo {
+    background-color: #f0ad4e;
+}
+
+.btn-rojo {
+    background-color: #d9534f;
+}
+
+.btn-verde {
+    background-color: #5cb85c;
+}
